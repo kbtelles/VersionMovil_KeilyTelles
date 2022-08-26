@@ -1,0 +1,206 @@
+/*ENCABEZADO*/
+header {
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding: 1rem 0rem;
+
+    /*Alineación*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*menú (ul)*/
+.menu{
+    width: 100%;
+    margin-top: 2rem; /*Separación del logo*/
+    list-style: none; /*quita el diseño de la lista*/
+
+    /*Alineación*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*Centrar el contenido*/
+}
+
+/*Elementos del menu*/
+.menu li{
+    font-size: 1.6rem;
+    font-weight: 700; /*Grosor al texto*/
+    padding: 1rem 3rem ; /*separación para textos*/
+    color: var(--color2) /*Variable de color*/
+}
+
+/**************************************************************************************/
+/* Sección que esta abajo del encabezado */
+/*Propiedades de la imagen*/
+.banner{
+    width: 100%;
+    height: 55rem;
+    background-image: url(./../Imagenes/bloque_1.png); /*Agregación de img*/
+    background-position: center; /*Imagen centrada*/
+    position: relative; /*La posición de la imagen*/
+}
+
+/*Propiedades de imagen capa*/
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Ajuste de img*/
+    opacity: 0.8; /*Tranparencia de la img*/
+}
+
+/* Caja de contenido*/
+.banner .contenido_banner{
+    width: 100%;
+    height: 100%;
+    position: absolute; /*Posición de la caja*/
+    top: 0; /*Parte de la posición*/
+    left: 0; /*Parte de la posición*/
+    padding: 2rem;
+}
+
+/*Propiedades en común de los textos*/
+.contenido_banner span, h1, p {
+    color: var(--color4); /*Variable de color*/
+    margin-top: 1.5rem;
+}
+
+/*Propiedades del span*/
+.contenido_banner span{
+    font-size: 2rem;
+}
+
+/*Propiedades del h1*/
+.contenido_banner h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+/*Propiedades del parrafo*/
+.contenido_banner p {
+    font-size: 1.7rem;
+}
+
+/*Propiedades del botón*/
+.boton{
+    text-decoration: none; /*Quitar el subrayado de el boton*/
+    display: block; /*Convertir en bloque el boton*/
+    width: 21rem;
+    height: 5rem;
+    background-color: var(--color1);
+    color: var(--color4);
+
+    /*Fonst siempre juntos*/
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    margin: auto; /* se indica de primero el auto */
+    margin-top: 2rem; /*y luego el top para que funcione de una manera correcta el margin*/
+    box-shadow: -2px -1px 47px -5px rgba(255, 113, 118, 1); /*Color de difuminación del boton*/
+    font-size: 1.8rem;
+
+    /*Alineación*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******************************************************************************************/
+
+/* Sección de anuncios */
+
+/*Sección en general*/
+.About-Rappi{
+    width: 100;
+}
+
+/*Titulo*/
+.About-Rappi .titulo{
+    width: 100;
+    background-color: var(--color5);
+    padding: 2rem;
+}
+
+/*h3*/
+.About-Rappi .titulo h3{
+    display: flex; /*Alineación*/
+    align-items: center; /*Centración*/
+    font-size: 2rem; /*tamaño del texto*/
+    font-weight: 100; /*Grosor del texto*/
+    padding: 4rem 2rem;
+}
+
+/*texto span*/
+.About-Rappi .titulo h3 span {
+    font-weight: 900; /*grosor del texto*/
+}
+
+/*linea*/
+.About-Rappi .titulo h3 hr {
+    margin: 0 1rem;
+}
+
+.About-Rappi .titulo h2{
+    font-size: 4rem;
+    margin-top: 2rem; /*Margin hacia arriba*/
+}
+
+/*División de contenido*/
+.contenido{
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+/* Parrafos del contenido*/
+.contenido p {
+    color: var(--color2);
+    font-size: 1.4rem;
+}
+
+/*División de los botone*/
+.botones {
+    width: 100%;
+
+    display: flex; /*Alineación del padre*/
+    flex-direction: column; /*Se alinean los hijos en columna*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*Primer boton*/
+.botones .bt1{
+    text-decoration: none; /*se resetea el diseño del boton*/
+    display: block; /*Se convierte en bloque*/
+    background-color: var(--color1); /*color del boton*/
+    color: #fff; /*color del texto*/
+    width: 20rem;
+    border-radius: 10rem; /*borde para que se vea como botón*/
+    padding: 1rem;
+    margin-top: 3rem; /*luego se le agrega el top*/
+    
+    box-shadow: -2px -1px 47px -5px rgba(255, 113, 118, 1); /*Color de difuminación del boton*/
+    font-size: 1.8rem;
+
+    display: flex; /*Alienación*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*Segundo Boton*/
+.botones .bt2{
+    text-decoration: none; /*se resetea el diseño del boton*/
+    display: block; /*Se convierte en bloque*/
+    border: 1px solid var(--color1); /*Borde del botón*/
+    width: 15rem;
+    border-radius: 10rem; /*borde para que se vea como botón*/
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--color1); /*Color del texto*/
+    font-size: 1.8rem;
+
+    display: flex; /*Alienación*/
+    align-items: center;
+    justify-content: center;
+}
