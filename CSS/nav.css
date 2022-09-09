@@ -1,0 +1,34 @@
+/*PROPIEDADES DEL NAVEGADOR*/
+
+/*ENCABEZADO*/
+header {
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding: 1rem 0rem;
+
+    /*Alineación*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*menú (ul)*/
+.menu{
+    width: 100%;
+    margin-top: 2rem; /*Separación del logo*/
+    list-style: none; /*quita el diseño de la lista*/
+
+    /*Alineación*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*Centrar el contenido*/
+}
+
+/*Elementos del menu*/
+.menu li{
+    font-size: 1.6rem;
+    font-weight: 700; /*Grosor al texto*/
+    padding: 1rem 3rem ; /*separación para textos*/
+    color: var(--color2) /*Variable de color*/
+}
